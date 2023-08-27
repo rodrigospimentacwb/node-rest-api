@@ -1,0 +1,19 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "Trabalho de uma simples rest-api com node e express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "restapi"
+  ],
+  "author": "Rodrigo da Silva Pimenta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
