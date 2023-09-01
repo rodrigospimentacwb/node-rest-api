@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
-const rotaProdutos = require('./routes/produtos');
+const rotaProdutos = require('./routes/produtos-v1');
+const rotaProdutosV2 = require('./routes/produtos-v2');
 const bodyParser = require('body-parser');
 
 app.use(morgan('dev'));
@@ -23,6 +24,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/produtos', rotaProdutos);
+app.use('/produtos-v2', rotaProdutosV2);
 
 app.use((req, res, next) => {
     const erro = new Error('Não encontrado');
